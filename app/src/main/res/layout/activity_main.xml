@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
 <!--    <com.google.android.material.appbar.AppBarLayout-->
 <!--        android:layout_width="match_parent"-->
@@ -23,7 +24,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
         android:orientation="vertical"
         android:padding="16dp"
         android:weightSum="2"
@@ -49,25 +50,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.2"
-                    android:text="TextView"
+                    android:text="DM"
                     android:textAlignment="center"
                     android:textColor="#616161"
                     android:textSize="16sp" />
 
-                <com.google.android.material.textfield.TextInputLayout
+                <EditText
+                    android:id="@+id/tf_dm"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
+                    android:layout_height="36dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/rounded_edittext"
+                    android:textSize="14sp"/>
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tf_dm"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_weight="1"
-                        android:hint="hint"
-                        android:textColorHint="#616161"
-                        android:textSize="14sp" />
-                </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -97,25 +92,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.2"
-                    android:text="TextView"
+                    android:text="LC"
                     android:textAlignment="center"
                     android:textColor="#616161"
                     android:textSize="16sp" />
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tf_lc1"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_weight="1"
-                        android:hint="hint"
-                        android:textColorHint="#616161"
-                        android:textSize="14sp" />
-                </com.google.android.material.textfield.TextInputLayout>
+
+                <EditText
+                    android:id="@+id/tf_lc1"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/rounded_edittext"
+                    android:textSize="14sp" />
+
 
             </LinearLayout>
 
@@ -146,25 +137,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.2"
-                    android:text="TextView"
+                    android:text="COMC"
                     android:textAlignment="center"
                     android:textColor="#616161"
                     android:textSize="16sp" />
 
-                <com.google.android.material.textfield.TextInputLayout
+                <EditText
+                    android:id="@+id/tf_comc"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tf_comc"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_weight="1"
-                        android:hint="hint"
-                        android:textColorHint="#616161"
-                        android:textSize="14sp" />
-                </com.google.android.material.textfield.TextInputLayout>
+                    android:layout_height="36dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/rounded_edittext"
+                    android:textColorHint="#616161"
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -194,25 +179,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.2"
-                    android:text="TextView"
+                    android:text="LC"
                     android:textAlignment="center"
                     android:textColor="#616161"
                     android:textSize="16sp" />
 
-                <com.google.android.material.textfield.TextInputLayout
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tf_lc2"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
+                    android:layout_height="36dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/rounded_edittext"
+                    android:textColorHint="#616161"
+                    android:textSize="14sp" />
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tf_lc2"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_weight="1"
-                        android:hint="hint"
-                        android:textColorHint="#616161"
-                        android:textSize="14sp" />
-                </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
 
         </LinearLayout>
@@ -242,25 +222,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.2"
-                    android:text="TextView"
+                    android:text="SZW"
                     android:textAlignment="center"
                     android:textColor="#616161"
                     android:textSize="16sp" />
 
-                <com.google.android.material.textfield.TextInputLayout
+                <EditText
+                    android:id="@+id/tf_szw"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tf_szw"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_weight="1"
-                        android:hint="hint"
-                        android:textColorHint="#616161"
-                        android:textSize="14sp" />
-                </com.google.android.material.textfield.TextInputLayout>
+                    android:layout_height="36dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/rounded_edittext"
+                    android:textColorHint="#616161"
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -271,7 +245,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="/"
+                    android:text="*"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -290,25 +264,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.2"
-                    android:text="TextView"
+                    android:text="SZL"
                     android:textAlignment="center"
                     android:textColor="#616161"
                     android:textSize="16sp" />
 
-                <com.google.android.material.textfield.TextInputLayout
+                <EditText
+                    android:id="@+id/tf_szl"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tf_szl"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_weight="1"
-                        android:hint="hint"
-                        android:textColorHint="#616161"
-                        android:textSize="14sp" />
-                </com.google.android.material.textfield.TextInputLayout>
+                    android:layout_height="36dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/rounded_edittext"
+                    android:textColorHint="#616161"
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -339,47 +307,50 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.2"
-                    android:text="TextView"
+                    android:text="PC"
                     android:textAlignment="center"
                     android:textColor="#616161"
                     android:textSize="16sp" />
 
-                <com.google.android.material.textfield.TextInputLayout
+                <EditText
+                    android:id="@+id/tf_pc"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1">
+                    android:layout_height="36dp"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/rounded_edittext"
+                    android:textColorHint="#616161"
+                    android:textSize="14sp" />
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tf_pc"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
-                        android:layout_weight="1"
-                        android:hint="hint"
-                        android:textColorHint="#616161"
-                        android:textSize="14sp" />
-                </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
 
         </LinearLayout>
     </LinearLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:weightSum="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#f3f3f3">
 
         <Button
             android:id="@+id/btn_Back"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
             android:layout_weight="0.3"
-            android:text="Back" />
+            android:text="Back"
+            android:textColor="@color/black"
+            android:background="#aaaaaa"/>
 
         <View
             android:id="@+id/view"
@@ -391,8 +362,11 @@
             android:id="@+id/btn_Confirm"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
             android:layout_weight="0.3"
-            android:text="Confirm" />
+            android:text="Confirm"
+            android:textColor="@color/black"
+            android:background="#62ebf2"/>
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
